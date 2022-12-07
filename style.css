@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-color: #f0f2f5;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text, .inputs, .inputs__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 500px;
+    align-items: flex-start;
+    margin-left: -40px;
+    
+}
+
+.logo {
+    height: 106px;
+    margin: -28px;
+    margin-bottom: -10px;
+}
+
+
+.text p {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+}
+
+.inputs {
+    margin-top: 65px;
+    width: 396px
+    
+}
+
+.inputs__form{
+    background-color: white;
+    border-radius: 10px;
+    width:400px;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.inputs__form  input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    outline: none;
+    font-size: 16px;
+}
+
+.login{
+    background-color: #1877f2;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.login:hover{
+    background-color: #4257b2;
+}
+
+.forget{
+    margin: 15px 0;
+    text-decoration: none;
+    color: #1877f2;
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+
+.forget:hover{
+    text-decoration: underline;
+}
+
+.sign-up{
+    padding-top: 20px;
+    border-top: 1px solid #dadde1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.signBtn{
+    background-color: #42b72a;;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Arial';
+    font-weight: 500;
+    transition: 0.5s;
+    transition: all ease-in .4s;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    line-height: 48px;
+    padding: 0 16px;
+    
+}
+
+.signBtn:hover{
+    background-color: green;
+    
+}
+
+
+
+
+
+ .inputs p {
+    border-top: none;
+    color: #1c1e21;
+    font-family: 'Arial';
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.inputs p {
+    cursor: pointer;
+}
+
+.inputs p b:hover {
+    text-decoration: underline;
+}
+
+.create{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(250,250,250,0.8);
+    padding-right: 118px;
+    
+}
+
+.open{
+    transition: all ease-in .4s;
+}
+
+.window {
+    visibility: hidden;
+    
+}
+
+
+.create-page{
+    width: 432px;
+    margin: auto;
+    height:530px;
+    margin-top: 100px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1),
+    0 8px 16px rgba(0,0,0,0.1) ; 
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign h1{
+    color: #1c1e21;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.sign-p {
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+
+.close {
+    width: 24px;
+    font-size: 30px;
+    height: 24px;
+    text-decoration: none;
+    color: #1c1e21;
+    cursor: pointer;
+}
+
+.create__inputs {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+
+.create__inputs input {
+    width: 48%;
+    padding:8px;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.email {
+    width: 100%;
+    padding:8px;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-top: 10px;
+}
+
+.password {
+    width: 100%;
+    padding:8px;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-top: 10px;
+}
+
+h3{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.date{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+ }
+
+.date-selection{
+    
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthday{
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    
+}
+.gen {
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+.month{
+    width: 32%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    height: 36px;
+    line-height: 20px;
+}
+
+.riddle{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #aaa;
+    font-size: 12px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    margin-left: 3px;
+}
+
+
+.gender-name{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center; 
+ }
+ 
+ .gender-choice{
+    width: 100%;
+     margin-top: 5px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .gender-choice-name{
+      width: 32%;
+      border: 1px solid #ccc;
+      padding: 5px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      height: 36px;
+      line-height: 20px;
+ }
+
+ .erti {
+    color: #777;
+    font-size: 11px;
+    width: auto;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ .erti a {
+    text-decoration: none;
+    color: #385898;
+ }
+
+ .erti a:hover {
+    text-decoration: underline;
+ }
+
+ .ori {
+    color: #777;
+    font-size: 11px;
+    width: auto;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+
+ .ori a {
+    text-decoration: none;
+    color: #385898;
+    width: 310px;
+ }
+
+ .ori a:hover {
+    text-decoration: underline;
+ }
+.btns {
+    margin-top: -4px;
+}
+ .sign-btn {
+    width: 50%;
+    height: 36px;
+    padding: 0 32px;
+    
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin-left: 100px;
+    border-radius: 6px;
+    cursor: pointer;  
+    background-color: #00a400;
+    border: none;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 0 32px;
+    
+ }
+ 
+ .sign-btn:hover {
+    background-color: #578843;
+ }
